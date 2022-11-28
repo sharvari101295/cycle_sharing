@@ -1,0 +1,16 @@
+{
+    "columns": [
+        "season",
+        "holiday",
+        "workingday",
+        "weather",
+        "temp",
+        "atemp",
+        "humidity",
+        "windspeed",
+        "hour",
+        "day", 
+        "month",
+        "year" 
+        ]
+}
