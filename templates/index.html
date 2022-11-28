@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title> Cycle Sharing </title>
+      <h1>  
+         <body bgcolor="orange"> 
+            <center>
+               Welcome to Cycle Sharing Count Prediction
+            </center> 
+         </h1>
+      </body>
+   </head>
+   <body align = "center" bgcolor="#008080">
+      <form action = "/result" method = "POST">
+  
+         <label> Select season : </label>
+         <select name="season">
+            <option> Select any below season </option>
+            <option> 1 </option>
+            <option> 2	</option>
+            <option> 3 </option>
+            <option> 4 </option>
+         </select><br><br>
+
+         <label> Select holiday : </label>
+         <select name="holiday">
+            <option> Select any below holiday </option>
+            <option> 0 </option>
+            <option> 1 </option>
+         </select><br><br>
+
+         <label> Select workingday : </label>
+         <select name="workingday">
+            <option> Select any below workinday </option>
+            <option> 1 </option>
+            <option> 0	</option>
+         </select><br><br>
+         
+         <label> Select weather : </label>
+         <select name="weather">
+            <option> Select any below value </option>
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+         </select><br><br>
+
+         <label> Enter tempearature : </label>
+         <input type="float" name="temp" placeholder="Enter temp bet 0.82 to 41.00"/></br></br>
+         
+         <label> Enter avg.tempearature : </label>
+         <input type="float" name="atemp" placeholder="Enter avg.temp bet 0.760 to 45.455"/></br></br>
+
+         <label> Enter humidity : </label>
+         <input type="float" name="humidity" placeholder="Enter avg.humidity between 8 to 100"/></br></br>
+
+         <label> Enter windspeed : </label>
+         <input type="float" name="windspeed" placeholder="Enter windspeed bet 1.169607 to 3.530319"/></br></br>
+
+         <label> Select hour : </label>
+         <select name="hour">
+            <option> Select any below value </option>
+            <option> 0 </option>
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+            <option> 5 </option>
+            <option> 6 </option>
+            <option> 7 </option>
+            <option> 8 </option>
+            <option> 9 </option>
+            <option> 10 </option>
+            <option> 11 </option>
+            <option> 12 </option>
+            <option> 13 </option>
+            <option> 14 </option>
+            <option> 15 </option>
+            <option> 16 </option>
+            <option> 17 </option>
+            <option> 18 </option>
+            <option> 19 </option>
+            <option> 20 </option>
+            <option> 21 </option>
+            <option> 22 </option>
+            <option> 23 </option>
+         </select><br><br>
+
+         <label> Select day : </label>
+         <select name="day">
+            <option> Select any below value </option>
+            <option> 0 </option>
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+            <option> 5 </option>
+            <option> 6 </option>
+         </select><br><br>
+         
+         <label> Select month : </label>
+         <select name="month">
+            <option> Select any below value </option>
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+            <option> 5 </option>
+            <option> 6 </option>
+            <option> 7 </option>
+            <option> 8 </option>
+            <option> 9 </option>
+            <option> 10 </option>
+            <option> 11 </option>
+            <option> 12 </option>
+         </select><br><br>
+
+         <label> Select year : </label>
+         <select name="year">
+            <option> Select year 0 for 2011 and 1 for 2012 </option>
+            <option> 0 </option>
+            <option> 1 </option>
+         </select><br><br>
+
+
+         <input type = "submit" value = "submit" />
+      </form> 
+      <h3> Count of cycle sharing : {{cyclecount}} </h3>
+   </body>
+</html>
